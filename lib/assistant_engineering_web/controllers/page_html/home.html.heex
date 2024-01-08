@@ -1,8 +1,8 @@
-<div class="container mx-auto px-4 max-w-3xl">
+<div class="container mx-auto p-4 max-w-3xl">
   <img
     src="images/logo.png"
     alt="AI"
-    class="h-64 object-cover object-center rounded-lg shadow-md mx-auto"
+    class="h-48 object-cover object-center rounded-lg shadow-md mx-auto"
   />
   <h1 class="text-4xl font-bold text-center py-4">Welcome to Assistant Engineering</h1>
   <p class="text-xl text-center mb-4">We help you build AI agents.</p>
@@ -11,17 +11,92 @@
     For inquiries, please <a href="mailto:tjcberman@gmail.com" class="text-blue-500 underline">contact us</a>.
   </p>
 
-  <p class="text-center mt-4">**This is WIP. Further development is ongoing.**</p>
+  <h2 class="text-2xl font-semibold py-2">Case studies:</h2>
+  <div class="flex flex-col sm:flex-row justify-between">
+    <!-- Case study 1 -->
+    <a
+      href="https://chat.openai.com/g/g-JTGPg4Brc-credit-memo-assistant"
+      class="flex-1 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
+    >
+      <img
+        src="images/credit_memo.png"
+        alt="Credit Memo Assistant"
+        class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
+      />
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Credit Memo
+      </h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400">
+        Leveraged loan investors with precise document summaries and risk-aligned advice. Tooling: Prompt engineering, RAG
+      </p>
+    </a>
+    <!-- Case study 2 -->
+    <a
+      href="https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator"
+      class="flex-1 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
+    >
+      <img
+        src="images/prompt_evaluator.png"
+        alt="GPTs Prompt Evaluator"
+        class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
+      />
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Prompt Evaluator
+      </h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400">
+        Evaluates your GPTs instructions and suggests improvements. <br />
+        Tooling: Prompt engineering, RAG
+      </p>
+    </a>
+    <!-- Case study 3 -->
+    <a
+      href="https://chat.openai.com/g/g-HQRj6hJuR-notes-from-underground-tutor"
+      class="flex-1 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
+    >
+      <img
+        src="images/notes_from_underground.png"
+        alt="Book"
+        class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
+      />
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Book Tutor
+      </h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400">
+        Discuss themes and characters, save notes. Tooling: Prompt engineering, RAG, Actions (API)
+      </p>
+    </a>
+  </div>
+
   <h2 class="text-2xl font-semibold py-2">What AI Assistants Do:</h2>
   <ul class="list-disc list-inside mb-4">
-    <li class="py-1">Automate repetitive tasks</li>
-    <li class="py-1">Provide personalized recommendations</li>
+    <li class="py-1">Allows question answering over large amounts of written data</li>
     <li class="py-1">Interact with users in a natural, human-like way</li>
+    <li class="py-1">Follow complex reasoning to combine data into a useful answer</li>
   </ul>
-  <h2 class="text-2xl font-semibold py-2">Challenges in Implementing AI Assistants:</h2>
+  <h2 class="text-2xl font-semibold py-2">Key components of AI assistants:</h2>
   <ul class="list-disc list-inside mb-4">
-    <li class="py-1">Understanding natural language</li>
-    <li class="py-1">Training on large datasets</li>
-    <li class="py-1">Ensuring privacy and security</li>
+    <li class="py-1">
+      <b>Prompt development</b>: how you provide instructions and guides the output of the assistant.  We have provided a tool to help you implement best practice into your assistant.
+      <a
+        href="https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator"
+        class="text-blue-500 underline"
+        target="_blank"
+      >
+        link
+      </a>
+    </li>
+    <li class="py-1">
+      <b>Retrieval Augmented Generation (RAG)</b>: This is custom infomation you provide to your assistant that is has not been trained on.  It could be specific to your company such as training documents.
+    </li>
+    <li class="py-1">
+      <b>Actions (API)</b>: This allows the assistant to call out to external services such as a weather service and integrate the results into the conversation.
+    </li>
   </ul>
+
+  <h2 class="text-2xl font-semibold py-2">Want to know more?</h2>
+  <p>
+    If you are intersted in finding out how AI Asistants can be of help, be it on internal company tools such as on-boarding new staff, company policies or external tools such as customer support or anything else,
+    <a href="mailto:tjcberman@gmail.com" class="text-blue-500 underline">contact us</a>
+    for a quick informal introduction.
+  </p>
 </div>
