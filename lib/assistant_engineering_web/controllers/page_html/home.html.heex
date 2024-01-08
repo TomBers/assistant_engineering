@@ -8,63 +8,28 @@
   <p class="text-xl text-center mb-4">We help you build AI agents.</p>
 
   <p class="text-center mt-4">
-    For inquiries, please <a href="mailto:tjcberman@gmail.com" class="text-blue-500 underline">contact us</a>.
+    For inquiries, please <a href={@contact_email} class="text-blue-500 underline">contact us</a>.
   </p>
 
   <h2 class="text-2xl font-semibold py-2">Case studies:</h2>
   <div class="flex flex-col sm:flex-row justify-between">
-    <!-- Case study 1 -->
-    <a
-      href="https://chat.openai.com/g/g-JTGPg4Brc-credit-memo-assistant"
-      class="flex-1 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
-    >
-      <img
-        src="images/credit_memo.png"
-        alt="Credit Memo Assistant"
-        class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
-      />
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Credit Memo
-      </h5>
-      <p class="font-normal text-gray-700 dark:text-gray-400">
-        Leveraged loan investors with precise document summaries and risk-aligned advice. Tooling: Prompt engineering, RAG
-      </p>
-    </a>
-    <!-- Case study 2 -->
-    <a
-      href="https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator"
-      class="flex-1 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
-    >
-      <img
-        src="images/prompt_evaluator.png"
-        alt="GPTs Prompt Evaluator"
-        class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
-      />
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Prompt Evaluator
-      </h5>
-      <p class="font-normal text-gray-700 dark:text-gray-400">
-        Evaluates your GPTs instructions and suggests improvements. <br />
-        Tooling: Prompt engineering, RAG
-      </p>
-    </a>
-    <!-- Case study 3 -->
-    <a
-      href="https://chat.openai.com/g/g-HQRj6hJuR-notes-from-underground-tutor"
-      class="flex-1 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
-    >
-      <img
-        src="images/notes_from_underground.png"
-        alt="Book"
-        class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
-      />
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Book Tutor
-      </h5>
-      <p class="font-normal text-gray-700 dark:text-gray-400">
-        Discuss themes and characters, save notes. Tooling: Prompt engineering, RAG, Actions (API)
-      </p>
-    </a>
+    <%= for case <- @case_studies do %>
+      <a
+        href={case.url}
+        class="flex-1 p-4 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700 m-2"
+      >
+        <img
+          src={case.image}
+          class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
+        />
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <%= case.title %>
+        </h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          <%= case.description %>
+        </p>
+      </a>
+    <% end %>
   </div>
 
   <h2 class="text-2xl font-semibold py-2">What AI Assistants Do:</h2>
@@ -96,7 +61,7 @@
   <h2 class="text-2xl font-semibold py-2">Want to know more?</h2>
   <p>
     If you are intersted in finding out how AI Asistants can be of help, be it on internal company tools such as on-boarding new staff, company policies or external tools such as customer support or anything else,
-    <a href="mailto:tjcberman@gmail.com" class="text-blue-500 underline">contact us</a>
+    <a href={@contact_email} class="text-blue-500 underline">contact us</a>
     for a quick informal introduction.
   </p>
 </div>
