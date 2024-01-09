@@ -11,6 +11,29 @@
     For inquiries, please <a href={@contact_email} class="text-blue-500 underline">contact us</a>.
   </p>
 
+  <h2 class="text-2xl font-semibold py-2">Key components of AI assistants:</h2>
+  <ul class="list-disc list-inside mb-4">
+    <li class="py-1">
+      <b>Prompt development</b>: Structuring text that can be interpreted and understood by a generative AI model <a
+        href="https://en.wikipedia.org/wiki/Prompt_engineering"
+        class="text-blue-500 underline"
+      > more</a>.  We have provided a tool to help you implement best practice into your assistant.
+      <a
+        href="https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator"
+        class="text-blue-500 underline"
+        target="_blank"
+      >
+        link
+      </a>
+    </li>
+    <li class="py-1">
+      <b>Retrieval Augmented Generation (RAG)</b>: Additional data you provide to your assistant, that the generative AI model can use to provide more specific answers. E.g your company's policy and training documents.
+    </li>
+    <li class="py-1">
+      <b>Actions (API)</b>: This allows the assistant to call out to external services, such as a weather API, integrating live data into the results.
+    </li>
+  </ul>
+
   <h2 class="text-2xl font-semibold py-2">Case studies:</h2>
   <div class="flex flex-col sm:flex-row justify-between">
     <%= for case <- @case_studies do %>
@@ -29,6 +52,10 @@
         <p class="font-normal text-gray-700 dark:text-gray-400">
           <%= case.description %>
         </p>
+        <br />
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          <b>Tooling</b>: <%= case.tools %>
+        </p>
       </a>
     <% end %>
   </div>
@@ -39,29 +66,12 @@
     <li class="py-1">Interact with users in a natural, human-like way</li>
     <li class="py-1">Follow complex reasoning to combine data into a useful answer</li>
   </ul>
-  <h2 class="text-2xl font-semibold py-2">Key components of AI assistants:</h2>
-  <ul class="list-disc list-inside mb-4">
-    <li class="py-1">
-      <b>Prompt development</b>: how you provide instructions and guides the output of the assistant.  We have provided a tool to help you implement best practice into your assistant.
-      <a
-        href="https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator"
-        class="text-blue-500 underline"
-        target="_blank"
-      >
-        link
-      </a>
-    </li>
-    <li class="py-1">
-      <b>Retrieval Augmented Generation (RAG)</b>: This is custom infomation you provide to your assistant that is has not been trained on.  It could be specific to your company such as training documents.
-    </li>
-    <li class="py-1">
-      <b>Actions (API)</b>: This allows the assistant to call out to external services such as a weather service and integrate the results into the conversation.
-    </li>
-  </ul>
 
   <h2 class="text-2xl font-semibold py-2">Want to know more?</h2>
   <p>
-    If you are intersted in finding out how AI Asistants can be of help, be it on internal company tools such as on-boarding new staff, company policies or external tools such as customer support or anything else,
+    AI Assistants are being used in some of the biggest companies in the world, quickly becoming the goto tool.<br /><br />
+    Whether you are looking to build internal company tooling such as on-boarding new staff, or external tools such as customer support, now is a great time to get started.<br /><br />
+    If you are interested in finding out how AI Assistants can be of help, or just curious about the technology, please
     <a href={@contact_email} class="text-blue-500 underline">contact us</a>
     for a quick informal introduction.
   </p>
