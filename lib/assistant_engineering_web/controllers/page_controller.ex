@@ -33,7 +33,7 @@ defmodule AssistantEngineeringWeb.PageController do
     ]
 
     render(conn, :home,
-      contact_email: "mailto:tjcberman@gmail.com",
+      contact_email: "mailto:team@assistant.engineering",
       case_studies: case_studies,
       layout: false
     )
