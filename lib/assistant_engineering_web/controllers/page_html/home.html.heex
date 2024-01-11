@@ -8,7 +8,7 @@
   <p class="text-xl text-center mb-4">We help you build AI agents.</p>
 
   <p class="text-center mt-4">
-    For inquiries, please <a href={@contact_email} class="text-blue-500 underline">contact us</a>.
+    For inquiries, please <a href={@mailto_link} class="text-blue-500 underline">contact us</a>.
   </p>
 
   <h2 class="text-2xl font-semibold py-2">Key components of AI assistants:</h2>
@@ -102,7 +102,7 @@
     AI Assistants are being used in some of the biggest companies in the world, quickly becoming the goto tool.<br /><br />
     Whether you are looking to build internal company tooling such as on-boarding new staff, or external tools such as customer support, now is a great time to get started.<br /><br />
     If you are interested in finding out how AI Assistants can be of help, or just curious about the technology,
-    <a href={@contact_email} class="text-blue-500 underline">contact us</a>
+    <a href={@mailto_link} class="text-blue-500 underline">contact us</a>
     for a quick informal introduction.
   </p>
 
@@ -124,7 +124,27 @@
     >
       LinkedIn
     </a>
-    ).  Having over 10 years experience in the software industry, writing software and managing teams. Having helped several AI related projects, contributing to open-source libraries and developing my own, I became very excited about the potential assistants have for completely rethinking the way we work.  I setup Assistant Engineering to help others realise this potential.<br /><br />
-    <br /><br />
+    ).  Having over 10 years experience in the software industry, writing software and managing teams. Working on several AI related projects, contributing to
+    <a
+      href="https://github.com/restlessronin/openai_ex"
+      target="_blank"
+      class="text-blue-500 underline"
+    >
+      open-source libraries
+    </a>
+    and building my own tools. <br /><br />
+    Assistants have the potential for completely rethinking the way we work. Assistant Engineering was setup to help others realise this potential.<br /><br />
   </p>
+
+  <footer class="text-center rounded-lg p-4 bg-gray-900 mt-8 flex justify-between dark:text-white">
+    <div class="w-1/2">
+      <p>&copy; 2024 Assistant Engineering. All rights reserved.</p>
+    </div>
+    <div class="w-1/2">
+      <p>
+        90 York Wy, London N1 9AG,
+        <br /><a href={@mailto_link} class="underline"><%= @contact_email %></a>
+      </p>
+    </div>
+  </footer>
 </div>
