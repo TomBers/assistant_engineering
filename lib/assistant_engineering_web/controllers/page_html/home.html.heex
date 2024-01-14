@@ -108,23 +108,10 @@
 
   <h2 class="text-2xl font-semibold py-2">About us</h2>
   <p>
-    Assistant Engineering was setup in January 2024, by Tom Berman (<a
-      href="https://github.com/TomBers"
-      class="text-blue-500 underline"
-      target="_blank"
-    >GitHub</a>, <a
-      href="https://twitter.com/TJCBerman"
-      class="text-blue-500 underline"
-      target="_blank"
-    >Twitter</a>,
-    <a
-      href="https://www.linkedin.com/in/tom-berman-213a4711"
-      class="text-blue-500 underline"
-      target="_blank"
-    >
-      LinkedIn
-    </a>
-    ).  Having over 10 years experience in the software industry, writing software and managing teams. Working on several AI related projects, contributing to
+    Assistant Engineering was setup in January 2024, by Tom Berman [<%= for links <- @profile_links do %>
+      <a href={links.url} target="_blank" class="text-blue-500 underline"><%= links.title %></a>
+    <% end %>
+    ].  Having over 10 years experience in the software industry, writing software and managing teams; working on several AI related projects, contributing to
     <a
       href="https://github.com/restlessronin/openai_ex"
       target="_blank"
@@ -136,11 +123,11 @@
     Assistants have the potential for completely rethinking the way we work. Assistant Engineering was setup to help others realise this potential.<br /><br />
   </p>
 
-  <footer class="text-center rounded-lg p-4 bg-gray-900 mt-8 flex justify-between dark:text-white">
-    <div class="w-1/2">
-      <p>&copy; 2024 Assistant Engineering. All rights reserved.</p>
+  <footer class="rounded-lg p-4 bg-gray-900 mt-8 flex justify-between dark:text-white">
+    <div class="w-1/4">
+      <p>&copy; 2024 Assistant Engineering</p>
     </div>
-    <div class="w-1/2">
+    <div class="w-3/4 text-right">
       <p>
         90 York Wy, London N1 9AG,
         <br /><a href={@mailto_link} class="underline"><%= @contact_email %></a>
