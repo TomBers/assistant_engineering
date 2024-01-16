@@ -12,23 +12,32 @@ defmodule AssistantEngineeringWeb.PageController do
         description:
           "Provide leveraged loan investors with precise document summaries and risk-aligned advice.",
         tools: "Prompt engineering, RAG",
-        image: "images/credit_memo.png"
+        image: "images/credit_memo.webp"
       },
       %{
-        url: "https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator",
-        title: "Prompt Evaluator",
+        url: "https://chat.openai.com/g/g-XsAyhV679-carbon-intensity-assistant",
+        title: "Carbon Intensity",
         description:
-          "Evaluates your prompts and suggests improvements. Integrating industry best practices.",
-        tools: "Prompt engineering, RAG",
-        image: "images/prompt_evaluator.png"
+          "Expert on UK grid carbon intensity, understand carbon output of the grid, with fuel type breakdown.",
+        tools: "Prompt engineering, Actions (API)",
+        image: "images/carbon.webp"
       },
+      # },
+      # %{
+      #   url: "https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator",
+      #   title: "Prompt Evaluator",
+      #   description:
+      #     "Evaluates your prompts and suggests improvements. Integrating industry best practices.",
+      #   tools: "Prompt engineering, RAG",
+      #   image: "images/prompt_evaluator.png"
+      # },
       %{
         url: "https://chat.openai.com/g/g-HQRj6hJuR-notes-from-underground-tutor",
         title: "Book Tutor",
         description:
           "Ask the agent anything about the book, and save your notes on specific passages.",
         tools: "Prompt engineering, RAG, Actions (API)",
-        image: "images/notes_from_underground.png"
+        image: "images/notes_from_underground.webp"
       }
     ]
 
