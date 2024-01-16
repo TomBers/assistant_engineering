@@ -67,7 +67,7 @@ defmodule AssistantEngineeringWeb.PageController do
   end
 
   def competition(conn, _params) do
-    competition_url = Application.get_env(:assistant_engineering, :competition_url, "BOB")
+    competition_url = Application.get_env(:assistant_engineering, :competition_url)
     render(conn, :competition, competition_url: competition_url, layout: false)
   end
 end
