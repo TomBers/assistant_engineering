@@ -18,6 +18,7 @@ defmodule AssistantEngineeringWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/competition", PageController, :competition
     get "/privacy", PageController, :privacy
   end
 

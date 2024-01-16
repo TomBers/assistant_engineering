@@ -65,4 +65,9 @@ defmodule AssistantEngineeringWeb.PageController do
     # so skip the default app layout.
     render(conn, :privacy, layout: false)
   end
+
+  def competition(conn, _params) do
+    competition_url = Application.get_env(:assistant_engineering, :competition_url, "BOB")
+    render(conn, :competition, competition_url: competition_url, layout: false)
+  end
 end

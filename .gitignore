@@ -21,7 +21,8 @@ erl_crash.dump
 
 # Temporary files, for example, from tests.
 /tmp/
-
+config/secrets.exs
+/config/secrets.exs
 # Ignore package tarball (built via "mix hex.build").
 assistant_engineering-*.tar
 
