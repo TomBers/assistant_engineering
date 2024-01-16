@@ -32,9 +32,21 @@ defmodule AssistantEngineeringWeb.PageController do
       }
     ]
 
+    profile_links = [
+      %{url: "https://twitter.com/tberman", title: "Twitter", icon: "fab fa-twitter"},
+      %{url: "https://github.com/TomBers", title: "GitHub", icon: "fab fa-github"},
+      %{
+        url: "https://www.linkedin.com/in/tom-berman-213a4711",
+        title: "LinkedIn",
+        icon: "fab fa-linkedin-in"
+      }
+    ]
+
     render(conn, :home,
-      contact_email: "mailto:tjcberman@gmail.com",
+      contact_email: "team@assistant.engineering",
+      mailto_link: "mailto:team@assistant.engineering",
       case_studies: case_studies,
+      profile_links: profile_links,
       layout: false
     )
   end
