@@ -1,14 +1,14 @@
 <div class="container mx-auto p-4 max-w-3xl">
   <img
-    src="images/logo.png"
-    alt="AI"
+    src="images/logo.webp"
+    alt="AI Assistant Engineering Logo"
     class="h-48 object-cover object-center rounded-lg shadow-md mx-auto"
   />
   <h1 class="text-4xl font-bold text-center py-4">Welcome to Assistant Engineering</h1>
   <p class="text-xl text-center mb-4">We help you build AI agents.</p>
 
   <p class="text-center mt-4">
-    For inquiries, please <a href={@mailto_link} class="text-blue-500 underline">contact us</a>.
+    For inquiries, please <a href={@mailto_link} class="text-blue-600 underline">contact us</a>.
   </p>
 
   <h2 class="text-2xl font-semibold py-2">Key components of AI assistants:</h2>
@@ -16,11 +16,11 @@
     <li class="py-1">
       <b>Prompt development</b>: Structuring text that can be interpreted and understood by a generative AI model. (<a
         href="https://en.wikipedia.org/wiki/Prompt_engineering"
-        class="text-blue-500 underline"
+        class="text-blue-600 underline"
       >ref</a>)  We have provided a tool to help you implement best practice into your assistant.
       <a
         href="https://chat.openai.com/g/g-XqAsoUyjd-gpts-prompt-evaluator"
-        class="text-blue-500 underline"
+        class="text-blue-600 underline"
         target="_blank"
       >
         link
@@ -45,10 +45,11 @@
         <img
           src={case.image}
           class="h-32 object-cover object-center rounded-lg shadow-md mx-auto"
+          alt={case.title <> " logo"}
         />
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           <%= case.title %>
-        </h5>
+        </h3>
         <p class="font-normal text-gray-700 dark:text-gray-400">
           <%= case.description %>
         </p>
@@ -70,9 +71,9 @@
   <h2 class="text-2xl font-semibold py-2">Our services</h2>
   <div class="flex flex-col sm:flex-row justify-between">
     <div class="flex-1 p-4 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700 m-2">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         Education sessions
-      </h5>
+      </h3>
       <p class="font-normal text-gray-200 pb-4">
         Get an introduction to AI Assistants, and how they can be used in your business.
       </p>
@@ -83,9 +84,9 @@
       </ul>
     </div>
     <div class="flex-1 p-4 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700 m-2">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
         GPT builder (Free)
-      </h5>
+      </h3>
       <p class="font-normal text-gray-200 pb-4">
         We build an AI assistant to your needs.  Bringing next-gen tools to your business.
       </p>
@@ -102,20 +103,20 @@
     AI Assistants are being used in some of the biggest companies in the world, quickly becoming the goto tool.<br /><br />
     Whether you are looking to build internal company tooling such as on-boarding new staff, or external tools such as customer support, now is a great time to get started.<br /><br />
     If you are interested in finding out how AI Assistants can be of help, or just curious about the technology,
-    <a href={@mailto_link} class="text-blue-500 underline">contact us</a>
+    <a href={@mailto_link} class="text-blue-600 underline">contact us</a>
     for a quick informal introduction.
   </p>
 
   <h2 class="text-2xl font-semibold py-2">About us</h2>
   <p>
     Assistant Engineering was setup in January 2024, by Tom Berman [<%= for links <- @profile_links do %>
-      <a href={links.url} target="_blank" class="text-blue-500 underline"><%= links.title %></a>
+      <a href={links.url} target="_blank" class="text-blue-600 underline"><%= links.title %></a>
     <% end %>
     ].  Having over 10 years experience in the software industry, writing software and managing teams; working on several AI related projects, contributing to
     <a
       href="https://github.com/restlessronin/openai_ex"
       target="_blank"
-      class="text-blue-500 underline"
+      class="text-blue-600 underline"
     >
       open-source libraries
     </a>
