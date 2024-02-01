@@ -19,6 +19,8 @@ defmodule AssistantEngineeringWeb.Router do
 
     get "/", PageController, :home
     get "/privacy", PageController, :privacy
+    get "/terms", PageController, :terms
+    get "/privacy_notice", PageController, :privacy_notice
   end
 
   # Other scopes may use custom stacks.
