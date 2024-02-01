@@ -18,9 +18,8 @@ defmodule AssistantEngineeringWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/privacy", PageController, :privacy
+    get "/privacy", PageController, :privacy_notice
     get "/terms", PageController, :terms
-    get "/privacy_notice", PageController, :privacy_notice
   end
 
   # Other scopes may use custom stacks.

@@ -60,12 +60,6 @@ defmodule AssistantEngineeringWeb.PageController do
     )
   end
 
-  def privacy(conn, _params) do
-    # The home page is often custom made,
-    # so skip the default app layout.
-    render(conn, :privacy, layout: false)
-  end
-
   def privacy_notice(conn, _params) do
     # The home page is often custom made,
     # so skip the default app layout.
